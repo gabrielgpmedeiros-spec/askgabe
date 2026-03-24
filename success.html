@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to AskGabe!</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--ink:#111210;--gold:#c08a22;--gold-pale:#fdf7e8;--white:#fff;--sans:'DM Sans',system-ui,sans-serif;--serif:'Instrument Serif',Georgia,serif}
+  body{font-family:var(--sans);background:var(--white);color:var(--ink);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
+  .card{max-width:480px;width:100%;text-align:center}
+  .icon{width:72px;height:72px;background:var(--gold-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 2rem;font-size:2rem}
+  h1{font-family:var(--serif);font-size:2.2rem;font-weight:400;margin-bottom:1rem}
+  h1 em{font-style:italic;color:var(--gold)}
+  p{font-size:0.95rem;color:#4a4640;line-height:1.75;margin-bottom:1.5rem}
+  .steps{background:#fafaf8;border:1px solid rgba(17,18,16,0.1);border-radius:14px;padding:1.5rem;text-align:left;margin-bottom:2rem}
+  .step{display:flex;gap:0.75rem;font-size:0.87rem;color:#4a4640;margin-bottom:0.75rem;align-items:flex-start}
+  .step:last-child{margin-bottom:0}
+  .step-num{width:22px;height:22px;background:var(--gold);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:500;flex-shrink:0;margin-top:0.05rem}
+  .btn{display:inline-block;background:var(--ink);color:white;padding:0.9rem 2.2rem;border-radius:100px;text-decoration:none;font-size:0.9rem;font-weight:500;transition:background 0.2s}
+  .btn:hover{background:var(--gold)}
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:0}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="icon">🎉</div>
+  <h1>You're in. <em>Welcome to AskGabe.</em></h1>
+  <p>Your payment was successful. You now have access to the community — record your first question and Gabe will reply within 48 hours.</p>
+  <div class="steps">
+    <div class="step"><div class="step-num">1</div><span>Check your email — your login details are on the way</span></div>
+    <div class="step"><div class="step-num">2</div><span>Join your Telegram group — the link was on the checkout page, or click the button below</span></div>
+    <div class="step"><div class="step-num">3</div><span>Hit the record button and ask your first question — in English or Portuguese</span></div>
+    <div class="step"><div class="step-num">4</div><span>Gabe will reply with a personal voice message within 48 hours</span></div>
+  </div>
+  <a href="https://t.me/askgabe" class="btn">Open Telegram →</a>
+</div>
+<script>
+  // Auto-redirect after 8 seconds if they don't click
+  // Auto-redirect removed — user chooses their Telegram group
+</script>
+</body>
+</html>
